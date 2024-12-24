@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 4vw;
+    width: 92vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+.book {
+    width: 35em;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: auto;
+    padding: 0.5em;
+}
+
+.books > a {
+    text-decoration: none;
+}
+
+.books > a:hover {
+    text-decoration: underline;
+}
+
+#nav {
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-size: 125%;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav img {
+    width: 1em;
+    height; 1em;
+    position: relative;
+    top: 0.15em;
+}
+
+.page {
+  border: 1px solid #CCC;
+  padding: 4em;
+  text-align: justify;
+
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.page .options {
+    margin: 1em;
+}
+
+p {
+    text-indent: 2em; /* Indent the first line of each paragraph */
+    margin: 0; /* Remove vertical space between paragraphs */
+    line-height: 1.4;
+}
+
+p.choice {
+    text-indent: 0em;
+    margin: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+p.or {
+    text-indent: 0em;
+    text-align: center;
+    font-size: 125%;
+}
+
+/* p a { */
+/*     text-decoration: underline; */
+/*     cursor: pointer; */
+/* } */
+
+.library img.title-logo {
+    width: 1.3em;
+    vertical-align: middle;
+}
+
+.library .books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8vw; /* Adjust gap between items if needed */
+    align-items: start;
+    position: absolute;
+    transition: transform 0.5s ease;
+    top: 0;
+    left: 0;
+}
+
+.library .books.off-left {
+    transform: translateX(-120%);
+}
+
+.library .books.off-right {
+    transform: translateX(120%);
+}
+
+.library .library-book {
+    width: 25vw;
+}
+
+.library .library-book .title {
+    height: 4vw;
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px;
+}
+
+.library .library-book .cover {
+    width: inherit;
+}
+
+.library #bookswiper {
+    min-height: 100%;
+    position: relative;
+}
+
+.library .fake-book {
+    width: 25vw;
+    height: 29vw;
+}
+
+.library #swipe-right-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transform: translateX(50%);
+}
+
+.library #swipe-left-button {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.library .swipe-button img {
+    width: 50px;
+}
+
+@media (max-width: 600px) {
+    .library .swipe-button img {
+        display: none;
+    }
+}
