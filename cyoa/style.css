@@ -1,3 +1,7 @@
+/* html, body { */
+/*     overflow-x: hidden; */
+/* } */
+
 body {
     font-family: Arial, sans-serif;
     margin: 4vw;
@@ -155,8 +159,25 @@ p.or {
     width: 50px;
 }
 
+body img#background {
+    height: 100vmin;
+    width: 100vmin;
+    object-fit: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.87);
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    opacity: 35%;
+    z-index: -1;
+}
+
 @media (max-width: 600px) {
     .library .swipe-button img {
+        display: none;
+    }
+    body img#background {
         display: none;
     }
 }
