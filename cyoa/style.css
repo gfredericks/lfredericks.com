@@ -23,6 +23,8 @@ h1 {
 
 .books > a:hover {
     text-decoration: underline;
+    transition: .3s ease all;
+    transform: translateY(-3px);
 }
 
 #nav {
@@ -117,6 +119,10 @@ p.or {
 
 .library .library-book .cover {
     width: inherit;
+-webkit-box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.37);
+-moz-box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.37);
+box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.37);
+
 }
 
 .library #bookswiper {
