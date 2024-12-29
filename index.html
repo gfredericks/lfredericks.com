@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lfredericks.com</title>
     <link rel="icon" href="/favicon.png" type="image/png">
     <style>
@@ -10,13 +11,34 @@
          /* max-width: 500px;
           margin-left: auto;
           margin-right: auto;*/
-          text-align: center
+          text-align: center;
+          margin: 0;
+          width: 100vw;
+      }
+      html, body {
+          overflow-x: hidden;
+      }
+      h1 {
+          font-size: 60px;
+      }
+      h2 {
+          font-size: 45px;
+      }
+      @media (max-width: 600px) {
+        h1 {
+            font-size: 10vw;
+        }
+        h2 {
+            font-size: 6vw;
+        }
       }
       h1,h2 {
           text-align: center;
       }
       body img#background {
-          height: 100vh;
+          height: 100vmin;
+          width: 100vmin;
+          object-fit: cover;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -48,12 +70,12 @@
 </head>
 <body>
   <img id="background" src="/favicon-rotated.png" />
-  <h1 style="font-size: 300%;">lfredericks.com</h1>
-    <h1 style="font-size: 225%;">My name is Leo, but you can call me Lenny.</h1>
-        <h1 style="font-size: 210%;">I made something, and here it is!</h1>
+  <h1>lfredericks.com</h1>
+  <h2>My name is Leo, but you can call me Lenny.</h2>
+  <h2>I made something, and here it is!</h2>
     <a href="https://cyoa.lfredericks.com"><button>CYOA Stories</button></a>
-  <br/><br/><br/><br/><br/><br/>
-    <h1 style="font-size: 400%;">More Coming Soon!</h1>
-    <h2 style="font-size: 300%;">Stay Tuned For More Awesome Stuff!</h2>
+  <br/><br/><br/><br/>
+  <h2>More Coming Soon!</h2>
+  <h2>Stay Tuned For More Awesome Stuff!</h2>
 </body>
 </html>
