@@ -57,7 +57,7 @@ h1 {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 a.prev-page {
-    transform: scaley(-1)
+   /* transform: scaley(-1) *\
 }
 
 .page .options {
