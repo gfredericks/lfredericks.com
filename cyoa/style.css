@@ -180,6 +180,11 @@ p.or {
     background: #AAE;
 }
 
+.navigation .page-jumper.a:hover {
+transition: .3s ease all;
+    transform: translateY(-1px);
+}
+
 body img#background {
     height: 100vmin;
     width: 100vmin;
