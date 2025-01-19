@@ -4,8 +4,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 4vw;
-    width: 92vw;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -25,7 +24,7 @@ h1 {
     text-decoration: none;
 }
 
-.books > a:hover {
+.books > a:hover .library-book {
     text-decoration: underline;
     transition: .3s ease all;
     transform: translateY(-3px);
@@ -49,19 +48,26 @@ h1 {
 }
 
 .page {
+  margin: 4vw;
   border: 1px solid #CCC;
-  padding: 4em;
+  padding: 4em 4em 2em 4em;
   text-align: justify;
 
   background: white;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 a.prev-page {
-   /* transform: scaley(-1) *\
+    transform: scaley(-1);
+    display: inline-block;
 }
 
 .page .options {
     margin: 1em;
+}
+
+.page .page-number {
+    padding-top: 1em;
+    text-align: center;
 }
 
 p {
@@ -88,6 +94,10 @@ p.or {
 /*     text-decoration: underline; */
 /*     cursor: pointer; */
 /* } */
+
+.library {
+    margin: 4vw;
+}
 
 .library img.title-logo {
     width: 1.3em;
@@ -162,6 +172,10 @@ p.or {
 
 .library .swipe-button img {
     width: 50px;
+}
+
+.navigation .page-jumper.current {
+    background: #AAE;
 }
 
 body img#background {
