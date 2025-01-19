@@ -175,6 +175,8 @@ p.or {
 }
 
 .navigation .page-jumper.current {
+    transition: .3s ease all;
+    transform: translateY(-1px);
     background: #AAE;
 }
 
