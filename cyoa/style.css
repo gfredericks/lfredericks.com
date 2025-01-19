@@ -180,7 +180,7 @@ p.or {
     background: #AAE;
 }
 
-.navigation .page-jumper > a:hover {
+.navigation .page-jumper:hover {
 transition: .3s ease all;
 transform: translateY(-1px);
 }
