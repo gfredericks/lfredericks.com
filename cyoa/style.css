@@ -184,6 +184,11 @@ p.or {
 .navigation .page-jumper.current {
     transition: .3s ease all;
     transform: translateY(-1px);
+    border: 3px border-bottom-color: #000000;
+        border-right-color: #939393;
+        border-top-color: #bfbdbd;
+        border-left-color: #949494;
+      }
     background: #AAE;
 }
 
